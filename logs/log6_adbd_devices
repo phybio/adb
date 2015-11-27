@@ -1,0 +1,84 @@
+system/core/adb/usb_linux_client.c::usb_ffs_read():
+function = check_header, file = system/core/adb/transport.c, line = 1255 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+system/core/adb/usb_linux_client.c::usb_ffs_read():
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+system/core/adb/usb_linux_client.c::usb_ffs_read():
+function = check_data, file = system/core/adb/transport.c, line = 1271 
+system/core/adb/transport.c::output_thread():
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = dump_packet, file = system/core/adb/transport.c, line = 108 
+system/core/adb/transport.c::dump_packet():
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+system/core/adb/transport.c::dump_hex()
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = remote_read, file = system/core/adb/transport_usb.c, line = 58 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+system/core/adb/usb_linux_client.c::usb_ffs_read():
+system/core/adb/fdevent.c::fdevent_process():
+system/core/adb/fdevent.c::dump_all_fds():
+got events fde->fd=17 events=0001, state=0101
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 717, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7fb3c08178, fde->func = 0x40620c 
+FDE #017 R   callback
+function = transport_socket_events, file = system/core/adb/transport.c, line = 211 
+system/core/adb/transport.c::transport_socket_events():
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = dump_packet, file = system/core/adb/transport.c, line = 108 
+system/core/adb/transport.c::dump_packet():
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+system/core/adb/transport.c::dump_hex()
+function = handle_packet, file = system/core/adb/adb.c, line = 547 
+system/core/adb/adb.c::handle_packet():
+system/core/adb/adb.c::handle_offline():
+function = handle_offline, file = system/core/adb/adb.c, line = 232 
+function = run_transport_disconnects, file = system/core/adb/transport.c, line = 93 
+system/core/adb/transport.c::run_transport_disconnects():
+system/core/adb/adb.c::parse_banner():
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+function = parse_banner, file = system/core/adb/adb.c, line = 485 
+system/core/adb/adb.c::handle_online():
+function = handle_online, file = system/core/adb/adb.c, line = 224 
+system/core/adb/adb.c::send_connect():
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = fill_connect_data, file = system/core/adb/adb.c, line = 305 
+function = fill_connect_data, file = system/core/adb/adb.c, line = 322, cnxn_props[0] = ro.product.name, value = sp9838aea_2_cmcc. 
+function = fill_connect_data, file = system/core/adb/adb.c, line = 322, cnxn_props[1] = ro.product.model, value = SP9838A. 
+function = fill_connect_data, file = system/core/adb/adb.c, line = 322, cnxn_props[2] = ro.product.device, value = scx35l64_sp9838aea_5mod. 
+function = send_connect, file = system/core/adb/adb.c, line = 363 
+function = send_packet, file = system/core/adb/transport.c, line = 226 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = dump_packet, file = system/core/adb/transport.c, line = 108 
+system/core/adb/transport.c::dump_packet():
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+system/core/adb/transport.c::dump_hex()
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+system/core/adb/fdevent.c::fdevent_loop():
+function = dump_packet, file = system/core/adb/transport.c, line = 108 
+system/core/adb/transport.c::dump_packet():
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+system/core/adb/transport.c::dump_hex()
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 714, before fdevent_process 
+system/core/adb/fdevent.c::dump_all_fds():
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+system/core/adb/transport.c::input_thread():
+function = remote_write, file = system/core/adb/transport_usb.c, line = 88 
+function = usb_write, file = system/core/adb/usb_linux_client.c, line = 499 
+function = usb_ffs_write, file = system/core/adb/usb_linux_client.c, line = 375 
+system/core/adb/usb_linux_client.c::usb_ffs_write():
+function = bulk_write, file = system/core/adb/usb_linux_client.c, line = 355 
+system/core/adb/usb_linux_client.c::bulk_write():
+system/core/adb/usb_linux_client.c::usb_ffs_write():
+function = usb_write, file = system/core/adb/usb_linux_client.c, line = 499 
+function = usb_ffs_write, file = system/core/adb/usb_linux_client.c, line = 375 
+system/core/adb/usb_linux_client.c::usb_ffs_write():
+function = bulk_write, file = system/core/adb/usb_linux_client.c, line = 355 
+system/core/adb/usb_linux_client.c::bulk_write():
+system/core/adb/usb_linux_client.c::usb_ffs_write():
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = read_packet, file = system/core/adb/transport.c, line = 148 

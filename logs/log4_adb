@@ -1,0 +1,177 @@
+SPREADTRUM\xiaodong.wang@xiaodongubtpc:~/projects/adb/adb1$ sudo ./adb root && sudo ./adb remount && sudo ./adb shell
+function = main, file = system/core/adb/adb.c, line = 1750, adb_host main
+function = adb_trace_init, file = system/core/adb/adb.c, line = 95 
+function = adb_commandline, file = system/core/adb/commandline.c, line = 1153 
+function = adb_set_transport, file = system/core/adb/adb_client.c, line = 24 
+function = adb_set_tcp_specifics, file = system/core/adb/adb_client.c, line = 31 
+function = adb_connect, file = system/core/adb/adb_client.c, line = 229 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185 
+function = switch_socket_transport, file = system/core/adb/adb_client.c, line = 99 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = read_and_dump, file = system/core/adb/commandline.c, line = 274 
+adbd is already running as root
+function = main, file = system/core/adb/adb.c, line = 1750, adb_host main
+function = adb_trace_init, file = system/core/adb/adb.c, line = 95 
+function = adb_commandline, file = system/core/adb/commandline.c, line = 1153 
+function = adb_set_transport, file = system/core/adb/adb_client.c, line = 24 
+function = adb_set_tcp_specifics, file = system/core/adb/adb_client.c, line = 31 
+function = adb_connect, file = system/core/adb/adb_client.c, line = 229 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185 
+function = switch_socket_transport, file = system/core/adb/adb_client.c, line = 99 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = read_and_dump, file = system/core/adb/commandline.c, line = 274 
+remount succeeded
+function = main, file = system/core/adb/adb.c, line = 1750, adb_host main
+function = adb_trace_init, file = system/core/adb/adb.c, line = 95 
+function = adb_commandline, file = system/core/adb/commandline.c, line = 1153 
+function = adb_set_transport, file = system/core/adb/adb_client.c, line = 24 
+function = adb_set_tcp_specifics, file = system/core/adb/adb_client.c, line = 31 
+function = interactive_shell, file = system/core/adb/commandline.c, line = 418 
+function = adb_connect, file = system/core/adb/adb_client.c, line = 229 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185 
+function = switch_socket_transport, file = system/core/adb/adb_client.c, line = 99 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = stdin_raw_init, file = system/core/adb/commandline.c, line = 248 
+function = read_and_dump, file = system/core/adb/commandline.c, line = 274 
+function = stdin_read_thread, file = system/core/adb/commandline.c, line = 364 
+shell@scx35l64_sp9838aea_5mod:/system # 
+shell@scx35l64_sp9838aea_5mod:/system # 
+shell@scx35l64_sp9838aea_5mod:/system # 
+shell@scx35l64_sp9838aea_5mod:/system # 
+
+
+SPREADTRUM\xiaodong.wang@xiaodongubtpc:~/projects/adb/adb1$ sudo ./adb push test.txt system
+function = main, file = system/core/adb/adb.c, line = 1750, adb_host main
+function = adb_trace_init, file = system/core/adb/adb.c, line = 95
+function = adb_commandline, file = system/core/adb/commandline.c, line = 1153 
+function = adb_set_transport, file = system/core/adb/adb_client.c, line = 24 
+function = adb_set_tcp_specifics, file = system/core/adb/adb_client.c, line = 31 
+function = adb_commandline, file = system/core/adb/commandline.c, line = 1634 command push 
+function = parse_push_pull_args, file = system/core/adb/commandline.c, line = 1124 
+function = adb_connect, file = system/core/adb/adb_client.c, line = 229 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185 
+function = switch_socket_transport, file = system/core/adb/adb_client.c, line = 99 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+0 KB/s (2 bytes in 1.000s)
+function = writex, file = system/core/adb/transport.c, line = 1220 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+SPREADTRUM\xiaodong.wang@xiaodongubtpc:~/projects/adb/adb1$ 
+

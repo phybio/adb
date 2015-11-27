@@ -1,0 +1,166 @@
+SPREADTRUM\xiaodong.wang@xiaodongubtpc:~/projects/adb/adb5$ sudo ./adb push test.txt system
+function = main, file = system/core/adb/adb.c, line = 1759, adb_host main
+function = adb_trace_init, file = system/core/adb/adb.c, line = 95, getenv p = (null) 
+system/core/adb/adb.c::main():
+system/core/adb/adb.c::main():Handling commandline()
+function = adb_commandline, file = system/core/adb/commandline.c, line = 1153 
+function = adb_set_transport, file = system/core/adb/adb_client.c, line = 24 type = 2, serial = (null)
+function = adb_set_tcp_specifics, file = system/core/adb/adb_client.c, line = 31 
+function = adb_commandline, file = system/core/adb/commandline.c, line = 1635 command push 
+function = parse_push_pull_args, file = system/core/adb/commandline.c, line = 1124 
+function = adb_connect, file = system/core/adb/adb_client.c, line = 235, service = sync:.
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185, service = host:version. 
+system/core/adb/adb_client.c::_adb_connect():
+system/core/adb/adb_client.c::_adb_connect():_adb_connect: host:version
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 204, socket_loopback_client, fd = 3 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 207, __adb_server_port = 5037, fd = 3. 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: system/core/adb/transport.c::writex():
+system/core/adb/transport.c::writex():writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+30303063 000c
+system/core/adb/transport.c::dump_hex():
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=12: system/core/adb/transport.c::writex():
+system/core/adb/transport.c::writex():writex: fd=3 len=12: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+686f73743a76657273696f6e host:version
+system/core/adb/transport.c::dump_hex():
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+system/core/adb/transport.c::readx():
+system/core/adb/transport.c::readx():readx: fd=3 wanted=4
+system/core/adb/transport.c::readx():
+system/core/adb/transport.c::readx():readx: fd=3 wanted=4 got=4
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+4f4b4159 OKAY
+system/core/adb/transport.c::dump_hex():
+system/core/adb/adb_client.c::_adb_connect():
+system/core/adb/adb_client.c::_adb_connect():_adb_connect: return fd 3
+system/core/adb/adb_client.c::adb_connect():
+system/core/adb/adb_client.c::adb_connect():adb_connect: service sync:
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+system/core/adb/transport.c::readx():
+system/core/adb/transport.c::readx():readx: fd=3 wanted=4
+system/core/adb/transport.c::readx():
+system/core/adb/transport.c::readx():readx: fd=3 wanted=4 got=4
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+30303034 0004
+system/core/adb/transport.c::dump_hex():
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+system/core/adb/transport.c::readx():
+system/core/adb/transport.c::readx():readx: fd=3 wanted=4
+system/core/adb/transport.c::readx():
+system/core/adb/transport.c::readx():readx: fd=3 wanted=4 got=4
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+30303230 0020
+system/core/adb/transport.c::dump_hex():
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185, service = sync:. 
+system/core/adb/adb_client.c::_adb_connect():
+system/core/adb/adb_client.c::_adb_connect():_adb_connect: sync:
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 204, socket_loopback_client, fd = 3 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 207, __adb_server_port = 5037, fd = 3. 
+function = switch_socket_transport, file = system/core/adb/adb_client.c, line = 99 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: system/core/adb/transport.c::writex():
+system/core/adb/transport.c::writex():writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+30303132 0012
+system/core/adb/transport.c::dump_hex():
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=18: system/core/adb/transport.c::writex():
+system/core/adb/transport.c::writex():writex: fd=3 len=18: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+686f73743a7472616e73706f72742d61 host:transport-a
+system/core/adb/transport.c::dump_hex():
+system/core/adb/adb_client.c::switch_socket_transport():
+system/core/adb/adb_client.c::switch_socket_transport():Switch transport in progress
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+system/core/adb/transport.c::readx():
+system/core/adb/transport.c::readx():readx: fd=3 wanted=4
+system/core/adb/transport.c::readx():
+system/core/adb/transport.c::readx():readx: fd=3 wanted=4 got=4
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+4f4b4159 OKAY
+system/core/adb/transport.c::dump_hex():
+system/core/adb/adb_client.c::switch_socket_transport():
+system/core/adb/adb_client.c::switch_socket_transport():Switch transport success
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: system/core/adb/transport.c::writex():
+system/core/adb/transport.c::writex():writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+30303035 0005
+system/core/adb/transport.c::dump_hex():
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=5: system/core/adb/transport.c::writex():
+system/core/adb/transport.c::writex():writex: fd=3 len=5: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+73796e633a sync:
+system/core/adb/transport.c::dump_hex():
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+system/core/adb/transport.c::readx():
+system/core/adb/transport.c::readx():readx: fd=3 wanted=4
+system/core/adb/transport.c::readx():
+system/core/adb/transport.c::readx():readx: fd=3 wanted=4 got=4
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+4f4b4159 OKAY
+system/core/adb/transport.c::dump_hex():
+system/core/adb/adb_client.c::_adb_connect():
+system/core/adb/adb_client.c::_adb_connect():_adb_connect: return fd 3
+system/core/adb/adb_client.c::adb_connect():
+system/core/adb/adb_client.c::adb_connect():adb_connect: return fd 3
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=8: system/core/adb/transport.c::writex():
+system/core/adb/transport.c::writex():writex: fd=3 len=8: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+5354415406000000 STAT....
+system/core/adb/transport.c::dump_hex():
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=6: system/core/adb/transport.c::writex():
+system/core/adb/transport.c::writex():writex: fd=3 len=6: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+73797374656d system
+system/core/adb/transport.c::dump_hex():
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+system/core/adb/transport.c::readx():
+system/core/adb/transport.c::readx():readx: fd=3 wanted=16
+system/core/adb/transport.c::readx():
+system/core/adb/transport.c::readx():readx: fd=3 wanted=16 got=16
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+53544154b68100000200000016235456 STAT.........#TV
+system/core/adb/transport.c::dump_hex():
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=8: system/core/adb/transport.c::writex():
+system/core/adb/transport.c::writex():writex: fd=3 len=8: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+53454e440c000000 SEND....
+system/core/adb/transport.c::dump_hex():
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=6: system/core/adb/transport.c::writex():
+system/core/adb/transport.c::writex():writex: fd=3 len=6: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+73797374656d system
+system/core/adb/transport.c::dump_hex():
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=6: system/core/adb/transport.c::writex():
+system/core/adb/transport.c::writex():writex: fd=3 len=6: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+2c3333313838 ,33188
+system/core/adb/transport.c::dump_hex():
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=10: system/core/adb/transport.c::writex():
+system/core/adb/transport.c::writex():writex: fd=3 len=10: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+4441544102000000330a DATA....3.
+system/core/adb/transport.c::dump_hex():
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=8: system/core/adb/transport.c::writex():
+system/core/adb/transport.c::writex():writex: fd=3 len=8: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+444f4e4516235456 DONE.#TV
+system/core/adb/transport.c::dump_hex():
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+system/core/adb/transport.c::readx():
+system/core/adb/transport.c::readx():readx: fd=3 wanted=8
+system/core/adb/transport.c::readx():
+system/core/adb/transport.c::readx():readx: fd=3 wanted=8 got=8
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+4f4b415900000000 OKAY....
+system/core/adb/transport.c::dump_hex():
+0 KB/s (2 bytes in 1.700s)
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=8: system/core/adb/transport.c::writex():
+system/core/adb/transport.c::writex():writex: fd=3 len=8: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+5155495400000000 QUIT....
+system/core/adb/transport.c::dump_hex():
+SPREADTRUM\xiaodong.wang@xiaodongubtpc:~/projects/adb/adb5$ 
+

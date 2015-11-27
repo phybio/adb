@@ -1,0 +1,93 @@
+SPREADTRUM\xiaodong.wang@xiaodongubtpc:~/projects/adb/adb5$ sudo kill 7090
+SPREADTRUM\xiaodong.wang@xiaodongubtpc:~/projects/adb/adb5$ sudo ./adb devices
+function = main, file = system/core/adb/adb.c, line = 1759, adb_host main
+function = adb_trace_init, file = system/core/adb/adb.c, line = 95, getenv p = (null) 
+system/core/adb/adb.c::main():
+system/core/adb/adb.c::main():Handling commandline()
+function = adb_commandline, file = system/core/adb/commandline.c, line = 1153 
+function = adb_set_transport, file = system/core/adb/adb_client.c, line = 24 type = 2, serial = (null)
+function = adb_set_tcp_specifics, file = system/core/adb/adb_client.c, line = 31 
+function = adb_query, file = system/core/adb/adb_client.c, line = 329 
+system/core/adb/adb_client.c::adb_query():
+system/core/adb/adb_client.c::adb_query():adb_query: host:devices
+function = adb_connect, file = system/core/adb/adb_client.c, line = 235, service = host:devices.
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185, service = host:version. 
+system/core/adb/adb_client.c::_adb_connect():
+system/core/adb/adb_client.c::_adb_connect():_adb_connect: host:version
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 204, socket_loopback_client, fd = -1 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 207, __adb_server_port = 5037, fd = -1. 
+system/core/adb/adb_client.c::adb_connect():
+system/core/adb/adb_client.c::adb_connect():adb_connect: service host:devices
+* daemon not running. starting it now on port 5037 *
+function = launch_server, file = system/core/adb/adb.c, line = 1111 
+function = get_my_path, file = system/core/adb/get_my_path_linux.c, line = 24 
+function = main, file = system/core/adb/adb.c, line = 1759, adb_host main
+function = adb_trace_init, file = system/core/adb/adb.c, line = 95, getenv p = (null) 
+system/core/adb/adb.c::main():
+ADB server didn't ACK
+function = adb_commandline, file = system/core/adb/commandline.c, line = 1153 
+* failed to start daemon *
+error: cannot connect to daemon
+function = adb_set_transport, file = system/core/adb/adb_client.c, line = 24 type = 2, serial = (null)
+function = adb_set_tcp_specifics, file = system/core/adb/adb_client.c, line = 31 
+function = adb_main, file = system/core/adb/adb.c, line = 1363, before init_transport_registration 
+function = init_transport_registration, file = system/core/adb/transport.c, line = 694 
+function = init_transport_registration, file = system/core/adb/transport.c, line = 704, before tsp_reg_recv = 4, tsp_reg_func = 0xf76df7d4.
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 610, fde = 0xf77f63a4,  fd = 4, func = 0xf76df7d4 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 621, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0xf77f63a4 
+function = fdevent_init, file = system/core/adb/fdevent.c, line = 252 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 4 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 624, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 ******* 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 5 
+function = init_transport_registration, file = system/core/adb/transport.c, line = 709, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 649 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = adb_set_affinity, file = system/core/adb/adb.c, line = 1087 
+function = adb_main, file = system/core/adb/adb.c, line = 1372, before usb_vendors_init 
+function = usb_vendors_init, file = system/core/adb/usb_vendors.c, line = 296 
+function = get_adb_usb_ini, file = system/core/adb/usb_vendors.c, line = 356 
+function = build_path, file = system/core/adb/usb_vendors.c, line = 345 
+function = local_init, file = system/core/adb/transport_local.c, line = 316 
+system/core/adb/transport_local.c::local_init():
+system/core/adb/usb_linux.c::device_poll_thread():
+function = adb_main, file = system/core/adb/adb.c, line = 1376, before adb_auth_init 
+adb_auth_init
+function = get_user_key, file = system/core/adb/adb_auth_host.c, line = 323 
+function = get_user_keyfilepath, file = system/core/adb/adb_auth_host.c, line = 286 
+system/core/adb/adb_auth_host.c::get_user_keyfilepath():
+system/core/adb/adb_auth_host.c::get_user_key():
+function = read_key, file = system/core/adb/adb_auth_host.c, line = 251 
+system/core/adb/adb_auth_host.c::read_key():
+function = client_socket_thread, file = system/core/adb/transport_local.c, line = 146 
+system/core/adb/transport_local.c::client_socket_thread():
+function = is_adb_interface, file = system/core/adb/transport_usb.c, line = 142 
+function = is_adb_interface, file = system/core/adb/transport_usb.c, line = 142 
+function = is_adb_interface, file = system/core/adb/transport_usb.c, line = 142 
+system/core/adb/usb_linux.c::register_device():
+system/core/adb/usb_linux.c::register_device():
+function = get_vendor_keys, file = system/core/adb/adb_auth_host.c, line = 348 
+function = build_local_name, file = system/core/adb/adb.c, line = 1276 
+function = adb_main, file = system/core/adb/adb.c, line = 1381, before install_listener 
+function = install_listener, file = system/core/adb/adb.c, line = 902 
+function = client_socket_thread, file = system/core/adb/transport_local.c, line = 153, intheard client_socket_thread 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_name_to_fd, file = system/core/adb/adb.c, line = 778 name = tcp:5037.
+function = local_name_to_fd, file = system/core/adb/adb.c, line = 789, socket_loopback_server. 
+function = install_listener, file = system/core/adb/adb.c, line = 943, l->fd = 10 
+function = install_listener, file = system/core/adb/adb.c, line = 954, install_listener, before fdevent_install, fd = 10, ss_listener_event_func = 0xf76d9390 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 610, fde = 0xf82b2820,  fd = 10, func = 0xf76d9390 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 621, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0xf82b2820 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 10 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 624, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 ******* 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 11 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 649 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = start_logging, file = system/core/adb/adb.c, line = 1020 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+SPREADTRUM\xiaodong.wang@xiaodongubtpc:~/projects/adb/adb5$ 
+

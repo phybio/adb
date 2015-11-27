@@ -1,0 +1,1136 @@
+shell@scx35l64_sp9838aea_5mod:/system # ./system                               
+function = main, file = system/core/adb/adb.c, line = 1758, adbd 
+function = adb_qemu_trace_init, file = system/core/adb/adb.c, line = 180 
+function = start_device_log, file = system/core/adb/adb.c, line = 1039 
+function = adb_main, file = system/core/adb/adb.c, line = 1354, before init_transport_registration 
+function = init_transport_registration, file = system/core/adb/transport.c, line = 692 
+function = init_transport_registration, file = system/core/adb/transport.c, line = 702, before fdevent_install 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x493d18,  fd = 4, func = 0x4061b8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x493d18 
+function = fdevent_init, file = system/core/adb/fdevent.c, line = 252 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 4 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 5 
+function = init_transport_registration, file = system/core/adb/transport.c, line = 707, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = adb_main, file = system/core/adb/adb.c, line = 1378, property_get value = 0. 
+function = adb_main, file = system/core/adb/adb.c, line = 1389, getenv adb_external_storage = (null). 
+function = should_drop_privileges, file = system/core/adb/adb.c, line = 1304 
+function = adb_main, file = system/core/adb/adb.c, line = 1432, else should_drop_privileges
+function = build_local_name, file = system/core/adb/adb.c, line = 1272 
+function = install_listener, file = system/core/adb/adb.c, line = 899 
+function = local_name_to_fd, file = system/core/adb/adb.c, line = 777 
+function = install_listener, file = system/core/adb/adb.c, line = 940, l->fd = 5 
+function = install_listener, file = system/core/adb/adb.c, line = 951, before fdevent_install ss_listener_event_func 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9283e090,  fd = 5, func = 0x401b88 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9283e090 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 5 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 6 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = adb_main, file = system/core/adb/adb.c, line = 1448, access(USB) 
+function = usb_ffs_init, file = system/core/adb/usb_linux_client.c, line = 456 
+function = usb_init, file = system/core/adb/usb_linux_client.c, line = 485, USB_FFS_ADB_EP0 
+function = adb_main, file = system/core/adb/adb.c, line = 1457, property_get service.adb.tcp.port value = . 
+function = adb_main, file = system/core/adb/adb.c, line = 1461, property_get persist.adb.tcp.port value = . 
+function = init_jdwp, file = system/core/adb/jdwp_service.c, line = 740 
+function = jdwp_control_init, file = system/core/adb/jdwp_service.c, line = 458 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 6 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b070,  fd = 6, func = 0x40d25c 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b070 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 6 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 7 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 707 
+function = fdevent_subproc_setup, file = system/core/adb/fdevent.c, line = 689 
+function = fdevent_subproc_setup, file = system/core/adb/fdevent.c, line = 697 before fdevent_create
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 9 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b0a0,  fd = 9, func = 0x404a18 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b0a0 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 9 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 10 
+function = fdevent_subproc_setup, file = system/core/adb/fdevent.c, line = 701 before fdevent_add
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 10 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b0d0,  fd = 10, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b0d0 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 10 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 11 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=10 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = usb_ffs_open_thread, file = system/core/adb/usb_linux_client.c, line = 326 
+function = init_functionfs, file = system/core/adb/usb_linux_client.c, line = 270 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 11 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b100,  fd = 11, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b100 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 11 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 12 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b0d0, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=11 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 13 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b130,  fd = 13, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b130 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 13 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 14 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b100, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=13 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 16 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b160,  fd = 16, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b160 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 16 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 17 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b130, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = register_usb_transport, file = system/core/adb/transport.c, line = 1142 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=16 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = init_usb_transport, file = system/core/adb/transport_usb.c, line = 121 
+function = register_transport, file = system/core/adb/transport.c, line = 714 
+function = transport_write_action, file = system/core/adb/transport.c, line = 571 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 17 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b190,  fd = 17, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b190 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 17 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 18 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b160, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=4 events=0001, state=0101
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=17 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x493d18, fde->func = 0x4061b8 
+function = transport_registration_func, file = system/core/adb/transport.c, line = 593 
+function = transport_read_action, file = system/core/adb/transport.c, line = 548 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f92408178,  fd = 18, func = 0x405a48 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f92408178 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 18 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 19 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = output_thread, file = system/core/adb/transport.c, line = 270 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = input_thread, file = system/core/adb/transport.c, line = 326 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = remote_read, file = system/core/adb/transport_usb.c, line = 58 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 20 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b1c0,  fd = 20, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b1c0 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 20 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 21 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b190, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=18 events=0001, state=0101
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=20 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = check_header, file = system/core/adb/transport.c, line = 1251 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 21 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b1f0,  fd = 21, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b1f0 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 21 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 22 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f92408178, fde->func = 0x405a48 
+function = transport_socket_events, file = system/core/adb/transport.c, line = 211 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = handle_packet, file = system/core/adb/adb.c, line = 546 
+function = send_packet, file = system/core/adb/transport.c, line = 226 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b1c0, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=21 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 22 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b220,  fd = 22, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b220 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 22 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 23 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b1f0, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=22 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 23 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b250,  fd = 23, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b250 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 23 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 24 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b220, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=23 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 24 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b280,  fd = 24, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b280 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 24 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 25 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b250, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=24 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 25 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b2b0,  fd = 25, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b2b0 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 25 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 26 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b280, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=25 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 26 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b2e0,  fd = 26, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b2e0 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 26 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 27 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b2b0, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=26 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 27 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b310,  fd = 27, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b310 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 27 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 28 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b2e0, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=27 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 28 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b340,  fd = 28, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b340 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 28 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 29 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b310, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=28 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 29 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b370,  fd = 29, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b370 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 29 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 30 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b340, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=29 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 30 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b3a0,  fd = 30, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b3a0 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 30 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 31 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b370, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=30 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 31 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b3d0,  fd = 31, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b3d0 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 31 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 32 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b3a0, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=31 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 32 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b400,  fd = 32, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b400 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 32 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 33 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b3d0, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=32 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 33 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b430,  fd = 33, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b430 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 33 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 34 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b400, fde->func = 0x40d4d8 
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = check_data, file = system/core/adb/transport.c, line = 1267 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = remote_read, file = system/core/adb/transport_usb.c, line = 58 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=18 events=0001, state=0101
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=33 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 34 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b460,  fd = 34, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b460 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 34 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 35 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f92408178, fde->func = 0x405a48 
+function = transport_socket_events, file = system/core/adb/transport.c, line = 211 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = handle_packet, file = system/core/adb/adb.c, line = 546 
+function = parse_banner, file = system/core/adb/adb.c, line = 484 
+function = handle_online, file = system/core/adb/adb.c, line = 224 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = fill_connect_data, file = system/core/adb/adb.c, line = 305 
+function = send_connect, file = system/core/adb/adb.c, line = 362 
+function = send_packet, file = system/core/adb/transport.c, line = 226 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b430, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=6 events=0001, state=0501
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=34 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b070, fde->func = 0x40d25c 
+function = jdwp_control_event, file = system/core/adb/jdwp_service.c, line = 519 
+function = jdwp_process_alloc, file = system/core/adb/jdwp_service.c, line = 200 
+function = fdevent_create, file = system/core/adb/fdevent.c, line = 589, fd = 35 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7f9281b490,  fd = 35, func = 0x40d4d8 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7f9281b490 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 35 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 36 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b460, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+got events fde->fd=35 events=0001, state=0581
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7f9281b490, fde->func = 0x40d4d8 
+function = jdwp_process_event, file = system/core/adb/jdwp_service.c, line = 241 
+function = jdwp_process_list_updated, file = system/core/adb/jdwp_service.c, line = 650 
+function = jdwp_process_list_msg, file = system/core/adb/jdwp_service.c, line = 149 
+function = jdwp_process_list, file = system/core/adb/jdwp_service.c, line = 124 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+function = remote_write, file = system/core/adb/transport_usb.c, line = 88 
+function = usb_write, file = system/core/adb/usb_linux_client.c, line = 499 
+function = usb_ffs_write, file = system/core/adb/usb_linux_client.c, line = 375 
+function = bulk_write, file = system/core/adb/usb_linux_client.c, line = 355 
+function = usb_write, file = system/core/adb/usb_linux_client.c, line = 499 
+function = usb_ffs_write, file = system/core/adb/usb_linux_client.c, line = 375 
+function = bulk_write, file = system/core/adb/usb_linux_client.c, line = 355 
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+
+
+
+function = check_header, file = system/core/adb/transport.c, line = 1251 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+function = check_data, file = system/core/adb/transport.c, line = 1267 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = remote_read, file = system/core/adb/transport_usb.c, line = 58 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+got events fde->fd=13 events=0001, state=0101
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7fad808178, fde->func = 0x405a48 
+function = transport_socket_events, file = system/core/adb/transport.c, line = 211 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = handle_packet, file = system/core/adb/adb.c, line = 546 
+function = service_to_fd, file = system/core/adb/services.c, line = 399 
+function = create_service_thread, file = system/core/adb/services.c, line = 165 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 609, fde = 0x7fadc53048,  fd = 17, func = 0x409370 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 620, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0x7fadc53048 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 17 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 623, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 18 
+function = add_transport_disconnect, file = system/core/adb/transport.c, line = 766 
+function = send_ready, file = system/core/adb/adb.c, line = 281 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = send_packet, file = system/core/adb/transport.c, line = 226 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+function = remote_write, file = system/core/adb/transport_usb.c, line = 88 
+function = usb_write, file = system/core/adb/usb_linux_client.c, line = 499 
+function = usb_ffs_write, file = system/core/adb/usb_linux_client.c, line = 375 
+function = bulk_write, file = system/core/adb/usb_linux_client.c, line = 355 
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = service_bootstrap_func, file = system/core/adb/services.c, line = 52 
+function = file_sync_service, file = system/core/adb/file_sync_service.c, line = 439 
+function = readx, file = system/core/adb/transport.c, line = 1185 
+function = check_header, file = system/core/adb/transport.c, line = 1251 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+function = check_data, file = system/core/adb/transport.c, line = 1267 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = remote_read, file = system/core/adb/transport_usb.c, line = 58 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+got events fde->fd=13 events=0001, state=0101
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7fad808178, fde->func = 0x405a48 
+function = transport_socket_events, file = system/core/adb/transport.c, line = 211 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = handle_packet, file = system/core/adb/adb.c, line = 546 
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = send_ready, file = system/core/adb/adb.c, line = 281 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = send_packet, file = system/core/adb/transport.c, line = 226 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+function = remote_write, file = system/core/adb/transport_usb.c, line = 88 
+function = usb_write, file = system/core/adb/usb_linux_client.c, line = 499 
+function = usb_ffs_write, file = system/core/adb/usb_linux_client.c, line = 375 
+function = bulk_write, file = system/core/adb/usb_linux_client.c, line = 355 
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1185 
+function = check_header, file = system/core/adb/transport.c, line = 1251 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+function = check_data, file = system/core/adb/transport.c, line = 1267 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = remote_read, file = system/core/adb/transport_usb.c, line = 58 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+got events fde->fd=13 events=0001, state=0101
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7fad808178, fde->func = 0x405a48 
+function = transport_socket_events, file = system/core/adb/transport.c, line = 211 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = handle_packet, file = system/core/adb/adb.c, line = 546 
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = send_ready, file = system/core/adb/adb.c, line = 281 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = send_packet, file = system/core/adb/transport.c, line = 226 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+function = remote_write, file = system/core/adb/transport_usb.c, line = 88 
+function = usb_write, file = system/core/adb/usb_linux_client.c, line = 499 
+function = usb_ffs_write, file = system/core/adb/usb_linux_client.c, line = 375 
+function = bulk_write, file = system/core/adb/usb_linux_client.c, line = 355 
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = do_stat, file = system/core/adb/file_sync_service.c, line = 88 
+function = writex, file = system/core/adb/transport.c, line = 1218 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+got events fde->fd=17 events=0001, state=0101
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7fadc53048, fde->func = 0x409370 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = send_packet, file = system/core/adb/transport.c, line = 226 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = fdevent_del, file = system/core/adb/fdevent.c, line = 682 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+function = remote_write, file = system/core/adb/transport_usb.c, line = 88 
+function = usb_write, file = system/core/adb/usb_linux_client.c, line = 499 
+function = usb_ffs_write, file = system/core/adb/usb_linux_client.c, line = 375 
+function = bulk_write, file = system/core/adb/usb_linux_client.c, line = 355 
+function = usb_write, file = system/core/adb/usb_linux_client.c, line = 499 
+function = usb_ffs_write, file = system/core/adb/usb_linux_client.c, line = 375 
+function = bulk_write, file = system/core/adb/usb_linux_client.c, line = 355 
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1185 
+function = check_header, file = system/core/adb/transport.c, line = 1251 
+function = check_data, file = system/core/adb/transport.c, line = 1267 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = remote_read, file = system/core/adb/transport_usb.c, line = 58 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+got events fde->fd=13 events=0001, state=0101
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7fad808178, fde->func = 0x405a48 
+function = transport_socket_events, file = system/core/adb/transport.c, line = 211 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = handle_packet, file = system/core/adb/adb.c, line = 546 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+function = check_header, file = system/core/adb/transport.c, line = 1251 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+function = check_data, file = system/core/adb/transport.c, line = 1267 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = remote_read, file = system/core/adb/transport_usb.c, line = 58 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+got events fde->fd=13 events=0001, state=0101
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7fad808178, fde->func = 0x405a48 
+function = transport_socket_events, file = system/core/adb/transport.c, line = 211 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = handle_packet, file = system/core/adb/adb.c, line = 546 
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = send_ready, file = system/core/adb/adb.c, line = 281 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = send_packet, file = system/core/adb/transport.c, line = 226 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1185 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = do_send, file = system/core/adb/file_sync_service.c, line = 337 
+function = is_on_system, file = system/core/adb/file_sync_service.c, line = 38 
+function = is_on_vendor, file = system/core/adb/file_sync_service.c, line = 44 
+function = handle_send_file, file = system/core/adb/file_sync_service.c, line = 189 
+function = readx, file = system/core/adb/transport.c, line = 1185 
+function = remote_write, file = system/core/adb/transport_usb.c, line = 88 
+function = usb_write, file = system/core/adb/usb_linux_client.c, line = 499 
+function = usb_ffs_write, file = system/core/adb/usb_linux_client.c, line = 375 
+function = bulk_write, file = system/core/adb/usb_linux_client.c, line = 355 
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = check_header, file = system/core/adb/transport.c, line = 1251 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+function = check_data, file = system/core/adb/transport.c, line = 1267 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = remote_read, file = system/core/adb/transport_usb.c, line = 58 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+got events fde->fd=13 events=0001, state=0101
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7fad808178, fde->func = 0x405a48 
+function = transport_socket_events, file = system/core/adb/transport.c, line = 211 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = handle_packet, file = system/core/adb/adb.c, line = 546 
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = send_ready, file = system/core/adb/adb.c, line = 281 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = send_packet, file = system/core/adb/transport.c, line = 226 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+function = remote_write, file = system/core/adb/transport_usb.c, line = 88 
+function = usb_write, file = system/core/adb/usb_linux_client.c, line = 499 
+function = usb_ffs_write, file = system/core/adb/usb_linux_client.c, line = 375 
+function = bulk_write, file = system/core/adb/usb_linux_client.c, line = 355 
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1185 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1218 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1185 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+SELinux: Loaded file_contexts from /file_contexts
+function = writex, file = system/core/adb/transport.c, line = 1218 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+got events fde->fd=17 events=0001, state=0101
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7fadc53048, fde->func = 0x409370 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = send_packet, file = system/core/adb/transport.c, line = 226 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = fdevent_del, file = system/core/adb/fdevent.c, line = 682 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+function = readx, file = system/core/adb/transport.c, line = 1185 
+function = remote_write, file = system/core/adb/transport_usb.c, line = 88 
+function = usb_write, file = system/core/adb/usb_linux_client.c, line = 499 
+function = usb_ffs_write, file = system/core/adb/usb_linux_client.c, line = 375 
+function = bulk_write, file = system/core/adb/usb_linux_client.c, line = 355 
+function = usb_write, file = system/core/adb/usb_linux_client.c, line = 499 
+function = usb_ffs_write, file = system/core/adb/usb_linux_client.c, line = 375 
+function = bulk_write, file = system/core/adb/usb_linux_client.c, line = 355 
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = check_header, file = system/core/adb/transport.c, line = 1251 
+function = check_data, file = system/core/adb/transport.c, line = 1267 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = remote_read, file = system/core/adb/transport_usb.c, line = 58 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+got events fde->fd=13 events=0001, state=0101
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7fad808178, fde->func = 0x405a48 
+function = transport_socket_events, file = system/core/adb/transport.c, line = 211 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = handle_packet, file = system/core/adb/adb.c, line = 546 
+function = fdevent_add, file = system/core/adb/fdevent.c, line = 675, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 648 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+function = check_header, file = system/core/adb/transport.c, line = 1251 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+function = check_data, file = system/core/adb/transport.c, line = 1267 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = remote_read, file = system/core/adb/transport_usb.c, line = 58 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+got events fde->fd=13 events=0001, state=0101
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7fad808178, fde->func = 0x405a48 
+function = transport_socket_events, file = system/core/adb/transport.c, line = 211 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = handle_packet, file = system/core/adb/adb.c, line = 546 
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = send_ready, file = system/core/adb/adb.c, line = 281 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = send_packet, file = system/core/adb/transport.c, line = 226 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+function = remote_write, file = system/core/adb/transport_usb.c, line = 88 
+function = usb_write, file = system/core/adb/usb_linux_client.c, line = 499 
+function = usb_ffs_write, file = system/core/adb/usb_linux_client.c, line = 375 
+function = bulk_write, file = system/core/adb/usb_linux_client.c, line = 355 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1185 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = check_header, file = system/core/adb/transport.c, line = 1251 
+function = check_data, file = system/core/adb/transport.c, line = 1267 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = remote_read, file = system/core/adb/transport_usb.c, line = 58 
+function = usb_read, file = system/core/adb/usb_linux_client.c, line = 505 
+function = usb_ffs_read, file = system/core/adb/usb_linux_client.c, line = 413 
+function = bulk_read, file = system/core/adb/usb_linux_client.c, line = 391 
+got events fde->fd=13 events=0001, state=0101
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+got events fde->fd=17 events=0001, state=0101
+function = fdevent_plist_enqueue, file = system/core/adb/fdevent.c, line = 484 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 716, after fdevent_process 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_call_fdfunc, file = system/core/adb/fdevent.c, line = 523, fde = 0x7fad808178, fde->func = 0x405a48 
+function = transport_socket_events, file = system/core/adb/transport.c, line = 211 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+function = handle_packet, file = system/core/adb/adb.c, line = 546 
+function = get_apacket, file = system/core/adb/adb.c, line = 208 
+function = send_packet, file = system/core/adb/transport.c, line = 226 
+function = write_packet, file = system/core/adb/transport.c, line = 180 
+function = remove_transport_disconnect, file = system/core/adb/transport.c, line = 777 
+function = fdevent_remove, file = system/core/adb/fdevent.c, line = 630 
+function = fdevent_plist_remove, file = system/core/adb/fdevent.c, line = 494 
+function = fdevent_disconnect, file = system/core/adb/fdevent.c, line = 270 
+function = fdevent_unregister, file = system/core/adb/fdevent.c, line = 464 
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = fdevent_plist_dequeue, file = system/core/adb/fdevent.c, line = 505 
+function = fdevent_loop, file = system/core/adb/fdevent.c, line = 713, before fdevent_process 
+function = fdevent_process, file = system/core/adb/fdevent.c, line = 380 before select *******
+function = remote_write, file = system/core/adb/transport_usb.c, line = 88 
+function = usb_write, file = system/core/adb/usb_linux_client.c, line = 499 
+function = usb_ffs_write, file = system/core/adb/usb_linux_client.c, line = 375 
+function = bulk_write, file = system/core/adb/usb_linux_client.c, line = 355 
+function = put_apacket, file = system/core/adb/adb.c, line = 217 
+function = read_packet, file = system/core/adb/transport.c, line = 148 
+

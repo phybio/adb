@@ -1,0 +1,617 @@
+SPREADTRUM\xiaodong.wang@xiaodongubtpc:~/projects/adb/adb2$ sudo ./adb push test.txt system
+function = main, file = system/core/adb/adb.c, line = 1750, adb_host main
+function = adb_trace_init, file = system/core/adb/adb.c, line = 95 
+function = adb_commandline, file = system/core/adb/commandline.c, line = 1153 
+function = adb_set_transport, file = system/core/adb/adb_client.c, line = 24 type = 2, serial = (null)
+function = adb_set_tcp_specifics, file = system/core/adb/adb_client.c, line = 31 
+function = adb_commandline, file = system/core/adb/commandline.c, line = 1634 command push 
+function = parse_push_pull_args, file = system/core/adb/commandline.c, line = 1124 
+function = adb_connect, file = system/core/adb/adb_client.c, line = 234, service = sync:.
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185, service = host:version. 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 206, __adb_server_port = 5037, fd = 3. 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=12: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185, service = sync:. 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 206, __adb_server_port = 5037, fd = 3. 
+function = switch_socket_transport, file = system/core/adb/adb_client.c, line = 99 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=18: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=5: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=8: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=6: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=8: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=6: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=6: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=10: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=8: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+0 KB/s (2 bytes in 1.011s)
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=8: function = dump_hex, file = system/core/adb/transport.c, line = 46
+
+
+
+
+
+
+
+
+SPREADTRUM\xiaodong.wang@xiaodongubtpc:~/projects/adb/adb4$ sudo ./adb root && sudo ./adb remount && sudo ./adb shell
+function = main, file = system/core/adb/adb.c, line = 1750, adb_host main
+function = adb_trace_init, file = system/core/adb/adb.c, line = 95 
+function = adb_commandline, file = system/core/adb/commandline.c, line = 1153 
+function = adb_set_transport, file = system/core/adb/adb_client.c, line = 24 type = 2, serial = (null)
+function = adb_set_tcp_specifics, file = system/core/adb/adb_client.c, line = 31 
+function = adb_connect, file = system/core/adb/adb_client.c, line = 235, service = root:.
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185, service = host:version. 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 204, socket_loopback_client, fd = 3 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 207, __adb_server_port = 5037, fd = 3. 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=12: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185, service = root:. 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 204, socket_loopback_client, fd = 3 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 207, __adb_server_port = 5037, fd = 3. 
+function = switch_socket_transport, file = system/core/adb/adb_client.c, line = 99 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=18: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=5: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = read_and_dump, file = system/core/adb/commandline.c, line = 274 
+adbd is already running as root
+function = main, file = system/core/adb/adb.c, line = 1750, adb_host main
+function = adb_trace_init, file = system/core/adb/adb.c, line = 95 
+function = adb_commandline, file = system/core/adb/commandline.c, line = 1153 
+function = adb_set_transport, file = system/core/adb/adb_client.c, line = 24 type = 2, serial = (null)
+function = adb_set_tcp_specifics, file = system/core/adb/adb_client.c, line = 31 
+function = adb_connect, file = system/core/adb/adb_client.c, line = 235, service = remount:.
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185, service = host:version. 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 204, socket_loopback_client, fd = 3 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 207, __adb_server_port = 5037, fd = 3. 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=12: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185, service = remount:. 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 204, socket_loopback_client, fd = 3 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 207, __adb_server_port = 5037, fd = 3. 
+function = switch_socket_transport, file = system/core/adb/adb_client.c, line = 99 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=18: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=8: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = read_and_dump, file = system/core/adb/commandline.c, line = 274 
+remount succeeded
+function = main, file = system/core/adb/adb.c, line = 1750, adb_host main
+function = adb_trace_init, file = system/core/adb/adb.c, line = 95 
+function = adb_commandline, file = system/core/adb/commandline.c, line = 1153 
+function = adb_set_transport, file = system/core/adb/adb_client.c, line = 24 type = 2, serial = (null)
+function = adb_set_tcp_specifics, file = system/core/adb/adb_client.c, line = 31 
+function = interactive_shell, file = system/core/adb/commandline.c, line = 418 
+function = adb_connect, file = system/core/adb/adb_client.c, line = 235, service = shell:.
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185, service = host:version. 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 204, socket_loopback_client, fd = 3 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 207, __adb_server_port = 5037, fd = 3. 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=12: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185, service = shell:. 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 204, socket_loopback_client, fd = 3 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 207, __adb_server_port = 5037, fd = 3. 
+function = switch_socket_transport, file = system/core/adb/adb_client.c, line = 99 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=18: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=6: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = stdin_raw_init, file = system/core/adb/commandline.c, line = 248 
+function = read_and_dump, file = system/core/adb/commandline.c, line = 274 
+function = stdin_read_thread, file = system/core/adb/commandline.c, line = 364
+
+
+
+
+
+
+
+
+
+
+
+
+
+SPREADTRUM\xiaodong.wang@xiaodongubtpc:~/projects/adb/adb4$ sudo ./adb shell "ls /"
+function = main, file = system/core/adb/adb.c, line = 1750, adb_host main
+function = adb_trace_init, file = system/core/adb/adb.c, line = 95 
+function = adb_commandline, file = system/core/adb/commandline.c, line = 1153 
+function = adb_set_transport, file = system/core/adb/adb_client.c, line = 24 type = 2, serial = (null)
+function = adb_set_tcp_specifics, file = system/core/adb/adb_client.c, line = 31 
+function = adb_connect, file = system/core/adb/adb_client.c, line = 235, service = shell:ls /.
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185, service = host:version. 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 204, socket_loopback_client, fd = 3 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 207, __adb_server_port = 5037, fd = 3. 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=12: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185, service = shell:ls /. 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 204, socket_loopback_client, fd = 3 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 207, __adb_server_port = 5037, fd = 3. 
+function = switch_socket_transport, file = system/core/adb/adb_client.c, line = 99 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=18: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=10: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = read_and_dump, file = system/core/adb/commandline.c, line = 274 
+acct
+bin
+cache
+charger
+config
+d
+data
+default.prop
+dev
+etc
+file_contexts
+fstab.scx35l64
+init
+init.board.rc
+init.environ.rc
+init.rc
+init.recovery.scx35l64.rc
+init.scx35l64.rc
+init.scx35l64.usb.rc
+init.storage.rc
+init.trace.rc
+init.usb.rc
+init.zygote32.rc
+init.zygote64_32.rc
+lib
+mnt
+proc
+productinfo
+property_contexts
+res
+root
+sbin
+sdcard
+seapp_contexts
+selinux_version
+sepolicy
+service_contexts
+storage
+sys
+system
+ueventd.rc
+ueventd.scx35l64.rc
+vendor
+
+
+
+
+
+
+
+
+
+
+
+
+
+SPREADTRUM\xiaodong.wang@xiaodongubtpc:~/projects/adb/adb4$ sudo kill 6649
+SPREADTRUM\xiaodong.wang@xiaodongubtpc:~/projects/adb/adb4$ top | grep *adb*
+
+SPREADTRUM\xiaodong.wang@xiaodongubtpc:~/projects/adb/adb4$ 
+SPREADTRUM\xiaodong.wang@xiaodongubtpc:~/projects/adb/adb4$ 
+SPREADTRUM\xiaodong.wang@xiaodongubtpc:~/projects/adb/adb4$ sudo ./adb shell "ls /"
+function = main, file = system/core/adb/adb.c, line = 1750, adb_host main
+function = adb_trace_init, file = system/core/adb/adb.c, line = 95 
+function = adb_commandline, file = system/core/adb/commandline.c, line = 1153 
+function = adb_set_transport, file = system/core/adb/adb_client.c, line = 24 type = 2, serial = (null)
+function = adb_set_tcp_specifics, file = system/core/adb/adb_client.c, line = 31 
+function = adb_connect, file = system/core/adb/adb_client.c, line = 235, service = shell:ls /.
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185, service = host:version. 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 204, socket_loopback_client, fd = -1 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 207, __adb_server_port = 5037, fd = -1. 
+* daemon not running. starting it now on port 5037 *
+function = launch_server, file = system/core/adb/adb.c, line = 1107 
+function = get_my_path, file = system/core/adb/get_my_path_linux.c, line = 24 
+function = main, file = system/core/adb/adb.c, line = 1750, adb_host main
+function = adb_trace_init, file = system/core/adb/adb.c, line = 95 
+function = adb_commandline, file = system/core/adb/commandline.c, line = 1153 
+function = adb_set_transport, file = system/core/adb/adb_client.c, line = 24 type = 2, serial = (null)
+function = adb_set_tcp_specifics, file = system/core/adb/adb_client.c, line = 31 
+function = adb_main, file = system/core/adb/adb.c, line = 1354, before init_transport_registration 
+function = init_transport_registration, file = system/core/adb/transport.c, line = 694 
+function = init_transport_registration, file = system/core/adb/transport.c, line = 704, before tsp_reg_recv = 4, tsp_reg_func = 0xf76a57fb.
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 610, fde = 0xf77bbb04,  fd = 4, func = 0xf76a57fb 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 621, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0xf77bbb04 
+function = fdevent_init, file = system/core/adb/fdevent.c, line = 252 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 4 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 624, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 5 
+function = init_transport_registration, file = system/core/adb/transport.c, line = 709, before fdevent_set 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 649 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = adb_set_affinity, file = system/core/adb/adb.c, line = 1083 
+function = adb_main, file = system/core/adb/adb.c, line = 1363, before usb_vendors_init 
+function = usb_vendors_init, file = system/core/adb/usb_vendors.c, line = 296 
+function = get_adb_usb_ini, file = system/core/adb/usb_vendors.c, line = 356 
+function = build_path, file = system/core/adb/usb_vendors.c, line = 345 
+function = local_init, file = system/core/adb/transport_local.c, line = 316 
+function = adb_main, file = system/core/adb/adb.c, line = 1367, before adb_auth_init 
+function = client_socket_thread, file = system/core/adb/transport_local.c, line = 146 
+function = client_socket_thread, file = system/core/adb/transport_local.c, line = 153, intheard client_socket_thread 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+adb_auth_init
+function = get_user_key, file = system/core/adb/adb_auth_host.c, line = 323 
+function = get_user_keyfilepath, file = system/core/adb/adb_auth_host.c, line = 286 
+function = is_adb_interface, file = system/core/adb/transport_usb.c, line = 142 
+function = is_adb_interface, file = system/core/adb/transport_usb.c, line = 142 
+function = is_adb_interface, file = system/core/adb/transport_usb.c, line = 142 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = local_connect, file = system/core/adb/transport_local.c, line = 112 
+function = local_connect_arbitrary_ports, file = system/core/adb/transport_local.c, line = 118 
+function = register_usb_transport, file = system/core/adb/transport.c, line = 1144 
+function = init_usb_transport, file = system/core/adb/transport_usb.c, line = 121 
+function = register_transport, file = system/core/adb/transport.c, line = 716 
+function = transport_write_action, file = system/core/adb/transport.c, line = 571 
+function = is_adb_interface, file = system/core/adb/transport_usb.c, line = 142 
+function = is_adb_interface, file = system/core/adb/transport_usb.c, line = 142 
+function = is_adb_interface, file = system/core/adb/transport_usb.c, line = 142 
+function = is_adb_interface, file = system/core/adb/transport_usb.c, line = 142 
+function = is_adb_interface, file = system/core/adb/transport_usb.c, line = 142 
+function = read_key, file = system/core/adb/adb_auth_host.c, line = 251 
+function = get_vendor_keys, file = system/core/adb/adb_auth_host.c, line = 348 
+function = build_local_name, file = system/core/adb/adb.c, line = 1272 
+function = adb_main, file = system/core/adb/adb.c, line = 1372, before install_listener 
+function = install_listener, file = system/core/adb/adb.c, line = 899 
+function = local_name_to_fd, file = system/core/adb/adb.c, line = 777 
+function = install_listener, file = system/core/adb/adb.c, line = 940, l->fd = 5 
+function = install_listener, file = system/core/adb/adb.c, line = 951, install_listener, before fdevent_install, fd = 5, ss_listener_event_func = 0xf769f390 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 610, fde = 0xf8eb0820,  fd = 5, func = 0xf769f390 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 621, before fdevent_register 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 434, fde = 0xf8eb0820 
+function = fdevent_register, file = system/core/adb/fdevent.c, line = 458, fde->fd = 5 
+function = fdevent_install, file = system/core/adb/fdevent.c, line = 624, after fdevent_register and before fdevent_connect 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 260 
+function = fdevent_connect, file = system/core/adb/fdevent.c, line = 264, select_n = 6 
+function = fdevent_set, file = system/core/adb/fdevent.c, line = 649 
+function = fdevent_update, file = system/core/adb/fdevent.c, line = 284 *******
+function = start_logging, file = system/core/adb/adb.c, line = 1017 
+* daemon started successfully *
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185, service = shell:ls /. 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 204, socket_loopback_client, fd = 3 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 207, __adb_server_port = 5037, fd = 3. 
+function = switch_socket_transport, file = system/core/adb/adb_client.c, line = 99 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=18: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=10: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = read_and_dump, file = system/core/adb/commandline.c, line = 274 
+acct
+bin
+cache
+charger
+config
+d
+data
+default.prop
+dev
+etc
+file_contexts
+fstab.scx35l64
+init
+init.board.rc
+init.environ.rc
+init.rc
+init.recovery.scx35l64.rc
+init.scx35l64.rc
+init.scx35l64.usb.rc
+init.storage.rc
+init.trace.rc
+init.usb.rc
+init.zygote32.rc
+init.zygote64_32.rc
+lib
+mnt
+proc
+productinfo
+property_contexts
+res
+root
+sbin
+sdcard
+seapp_contexts
+selinux_version
+sepolicy
+service_contexts
+storage
+sys
+system
+ueventd.rc
+ueventd.scx35l64.rc
+vendor
+SPREADTRUM\xiaodong.wang@xiaodongubtpc:~/projects/adb/adb4$ 
+
+SPREADTRUM\xiaodong.wang@xiaodongubtpc:~/projects/adb/adb4$ sudo ./adb logcat
+function = main, file = system/core/adb/adb.c, line = 1750, adb_host main
+function = adb_trace_init, file = system/core/adb/adb.c, line = 95 
+function = adb_commandline, file = system/core/adb/commandline.c, line = 1153 
+function = adb_set_transport, file = system/core/adb/adb_client.c, line = 24 type = 2, serial = (null)
+function = adb_set_tcp_specifics, file = system/core/adb/adb_client.c, line = 31 
+function = logcat, file = system/core/adb/commandline.c, line = 842 
+function = escape_arg, file = system/core/adb/commandline.c, line = 705 
+function = send_shellcommand, file = system/core/adb/commandline.c, line = 820 
+function = adb_connect, file = system/core/adb/adb_client.c, line = 235, service = shell:export ANDROID_LOG_TAGS=""""; exec logcat.
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185, service = host:version. 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 204, socket_loopback_client, fd = 3 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 207, __adb_server_port = 5037, fd = 3. 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=12: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 185, service = shell:export ANDROID_LOG_TAGS=""""; exec logcat. 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 204, socket_loopback_client, fd = 3 
+function = _adb_connect, file = system/core/adb/adb_client.c, line = 207, __adb_server_port = 5037, fd = 3. 
+function = switch_socket_transport, file = system/core/adb/adb_client.c, line = 99 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=18: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=4: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = writex, file = system/core/adb/transport.c, line = 1220 fd = 3 
+writex: fd=3 len=47: function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = adb_status, file = system/core/adb/adb_client.c, line = 148 
+function = readx, file = system/core/adb/transport.c, line = 1187, fd = 3 
+function = dump_hex, file = system/core/adb/transport.c, line = 46 
+function = read_and_dump, file = system/core/adb/commandline.c, line = 274 
+--------- beginning of system
+
